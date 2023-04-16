@@ -1,0 +1,9 @@
+<template>
+    <aside>
+        <CvProfil/>
+        <CvHardSkills/>
+        <CvSoftSkills/>
+        <CvLangue/>
+        <CvHobby/>
+    </aside>
+</template>

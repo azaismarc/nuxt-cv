@@ -1,0 +1,113 @@
+@import "fonts/lato/stylesheet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    @apply h-screen;
+}
+
+body {
+    -webkit-print-color-adjust: exact !important;
+}
+
+main, aside {
+    @apply flex flex-col justify-between;
+} 
+
+header > div {
+    @apply p-5;
+}
+
+main {
+    @apply pb-5 px-5;
+}
+
+main {
+    @apply bg-white;
+}
+
+aside {
+    @apply bg-dark-blue text-white px-5;
+}
+
+header h1 {
+    @apply text-red text-5xl font-semibold;
+}
+
+header h2 {
+    @apply text-blue text-2xl;
+}
+
+h1 {
+    @apply uppercase;
+}
+
+main h1, aside h1 {
+    @apply text-2xl pb-3 border-b mb-5;
+}
+
+main h1::before, aside h1::before {
+    content: "// ";
+    @apply text-blue;
+}
+
+main h2 {
+    @apply text-blue;
+}
+
+main h2, aside h2 {
+    @apply  font-bold text-lg;
+}
+
+main h3, aside h3 {
+    @apply font-bold italic;
+}
+
+html {
+    @apply text-sm;
+}
+
+section {
+    @apply mb-10;
+}
+
+p {
+    @apply text-justify;
+}
+
+main p {
+    @apply my-2;
+}
+
+ul {
+    @apply list-disc list-inside
+}
+
+.dot {
+    margin: auto;
+    width: 14px;
+    height: 14px;
+    background: #778899;
+    border-radius:7px;
+}
+
+.line {
+    margin: auto;
+    width: 2px;
+    height: 100%;
+    background: #778899;
+}
+
+.circle {
+    @apply w-4 h-4 rounded-full; 
+}
+
+.circle-blue {
+    @apply bg-blue;
+}
+
+.circle-white {
+    @apply bg-white;
+}
